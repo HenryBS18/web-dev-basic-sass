@@ -1,0 +1,166 @@
+@import url("https://fonts.google.com/specimen/Hanken+Grotesk");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  border-radius: 24px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.03);
+  width: 600px;
+}
+.card .card-left {
+  background: linear-gradient(to bottom, #6642fe, #322bea);
+  border-radius: 24px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .card-left .title {
+  font-size: 20px;
+  color: white;
+  opacity: 0.6;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.card .card-left .circle {
+  border-radius: 9999px;
+  margin-bottom: 24px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #4a23cc, #4734ee);
+}
+.card .card-left .circle .score {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+.card .card-left .circle .score-of {
+  color: white;
+  opacity: 0.5;
+}
+.card .card-left .score-label {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 16px;
+}
+.card .card-left .score-desc {
+  width: 75%;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  opacity: 0.6;
+  margin-bottom: 24px;
+}
+.card .card-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .card-right .content {
+  width: 80%;
+  margin-top: 24px;
+}
+.card .card-right .content .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.card .card-right .content .list-score-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-bottom: 24px;
+}
+.card .card-right .content .score-card {
+  border-radius: 8px;
+  padding: 0 8px 0 8px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .card-right .content .score-card .logo-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+}
+.card .card-right .content .score-card .logo-title .title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.card .card-right .content .score-card .score {
+  display: flex;
+  column-gap: 4px;
+}
+.card .card-right .content .score-card .score .current-score {
+  font-weight: bold;
+}
+.card .card-right .content .score-card .score .of-score {
+  opacity: 0.6;
+}
+.card .card-right .content .continue-button {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  background-color: #303b59;
+  cursor: pointer;
+  user-select: none;
+}
+.card .card-right .content .continue-button p {
+  color: white;
+}
+.card .card-right .content .continue-button:active {
+  background: linear-gradient(to bottom, #6d51dc, #3b35e7);
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    align-items: flex-start;
+  }
+  .card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .card .card-left,
+  .card .card-right {
+    width: 100%;
+  }
+  .card .card-left {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .card .card-left .score-desc {
+    width: 70%;
+  }
+  .card .card-right {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
